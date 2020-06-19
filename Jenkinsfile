@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        node: { label "va-security-test1" }
+    }
 
     stages {
         stage('Build') {
